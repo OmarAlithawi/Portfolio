@@ -1,13 +1,16 @@
 import { makeStyles } from "@material-ui/core/styles";
+import { colors } from "@material-ui/core";
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
+    
   },
   
   menuButton: {
     marginRight: 36,
+    
   },
   hide: {
     display: "none",
@@ -16,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     width: drawerWidth,
     flexShrink: 0,
     whiteSpace: "nowrap",
+    color:'white'
   },
   drawerOpen: {
     width: drawerWidth,
@@ -23,6 +27,8 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
+    backgroundColor:"#065A82",
+    color:'white'
   },
   drawerClose: {
     transition: theme.transitions.create("width", {
@@ -34,6 +40,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       width: theme.spacing(9) + 1,
     },
+    backgroundColor:"#065A82",
+    color:'white'
   },
   toolbar: {
     display: "flex",

@@ -67,7 +67,7 @@ export default function Sidebar() {
 
   return (
     <div className={classes.root}>
-      <CssBaseline />
+      
     
       <Drawer
         variant="permanent"

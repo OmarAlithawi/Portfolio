@@ -1,8 +1,9 @@
 *{
-  margin: 0;
+ margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
+
 
 
 .profile{
@@ -19,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 15px;
+  margin-right: 11px;
 }
 .profileImg {
   width: 100px;
@@ -31,4 +32,21 @@
 #hamburger {
   position: relative;
   left: 30px;
+}
+
+/*Sidebar*/
+
+.MuiListItemIcon-root  {
+  color: white !important;
+  margin-left: 4px;
+}
+
+.MuiSvgIcon-root{
+  fill: white !important;
+}
+
+main{
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
