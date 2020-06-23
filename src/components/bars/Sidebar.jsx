@@ -21,6 +21,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import HttpIcon from "@material-ui/icons/Http";
 import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
+import SidebarItems from './SidebarItems'
 
 export default function Sidebar() {
   const classes = useStyles();
@@ -109,12 +110,9 @@ export default function Sidebar() {
         <List>{sidebarProfileInformation()}</List>
         <Divider />
         <List>
-          {["Home", "About", "Portfolio", "Contact"].map((text, index) => (
-            <ListItem button key={text}>
-              {item(text, index)}
-            </ListItem>
-          ))}
+          {["Home", "About", "Portfolio", "Contact"].map((text, index) => <SidebarItems index ={index} text = {text} item = {item} />)}
         </List>
+        
       </Drawer>
       
     </div>

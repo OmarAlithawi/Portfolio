@@ -7,7 +7,7 @@ import  github  from '../../img/github.svg'
 
 export default function Header() {
     return (
-        <div className = "header">
+        <div className = "header" id ="Home">
          
             <div className ="sectionsDots">
                 <div className ="dot active"></div>
