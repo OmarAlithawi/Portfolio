@@ -1,0 +1,6 @@
+.active{
+    background-color: #065A82;
+    transform: scale(1.2);
+    border-radius: 50%;
+    transition: all .1s ease;
+}

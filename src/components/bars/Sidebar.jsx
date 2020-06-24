@@ -22,6 +22,7 @@ import MenuBookIcon from "@material-ui/icons/MenuBook";
 import HttpIcon from "@material-ui/icons/Http";
 import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
 import SidebarItems from './SidebarItems'
+import './style.css'
 
 export default function Sidebar() {
   const classes = useStyles();
