@@ -6,4 +6,7 @@
  - type writer effect 
  - blob animation 
  - snap scroll
+ - two languages
+
+
  

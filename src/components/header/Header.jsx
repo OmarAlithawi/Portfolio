@@ -1,17 +1,22 @@
 import React, {useEffect} from 'react'
 import './style.css'
-import hero from '../../img/hero.png'
-import  instagram  from '../../img/instagram.svg'
-import  linkedin  from '../../img/linkedin.svg'
-import  github  from '../../img/github.svg'
+import hero from '../../assets/img/hero.png'
+import  instagram  from '../../assets/img/instagram.svg'
+import  linkedin  from '../../assets/img/linkedin.svg'
+import  github  from '../../assets/img/github.svg'
 import SectionsDots from './SectionsDots'
 import {Element} from 'react-scroll'
-
+import * as Scroll from 'react-scroll'
 
 
 export default function Header() {
 
-    
+  const scroll = Scroll.animateScroll;
+
+  useEffect(() => {
+    scroll.scrollToTop();
+  }, [])
+
     return (
         <Element className = "header" name ="Home">
             <div className ="sectionsDots" >
@@ -30,7 +35,12 @@ export default function Header() {
           <div className = "headerImage"> 
             <img src ={hero} alt ="hero" />
           </div>  
-            
+
+          <h1 className ='myName'>Omar Alithawi</h1>
+          <h3 className ='prefix'>Hi, I'm</h3>
+          <p className ="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iste sit, mollitia illo dolore laboriosam aliquam consequuntur error omnis sed!
+            </p>  
 
         </Element>
     )

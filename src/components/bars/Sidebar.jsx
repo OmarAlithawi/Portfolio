@@ -14,7 +14,7 @@ import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import omar from "../../img/omar.jpg";
+import omar from "../../assets/img/omar.jpg";
 import useStyles from "./style";
 import FaceIcon from "@material-ui/icons/Face";
 import HomeIcon from "@material-ui/icons/Home";
@@ -33,7 +33,7 @@ export default function Sidebar() {
     setIsOpen(!isOpen);
   };
 
-  const item = (text, index) => {
+  const sidebarLinkItems = (text, index) => {
     const icons = [
       <HomeIcon  key = {index}/>,
       <MenuBookIcon key = {index}/>,
@@ -111,7 +111,7 @@ export default function Sidebar() {
         <List>{sidebarProfileInformation()}</List>
         <Divider />
         <List>
-          {["Home", "About", "Portfolio", "Contact"].map((text, index) => <SidebarItems index ={index} text = {text} item = {item} />)}
+          {["Home", "About", "Portfolio", "Contact"].map((text, index) => <SidebarItems index ={index} text = {text} item = {sidebarLinkItems} />)}
         </List>
         
       </Drawer>
