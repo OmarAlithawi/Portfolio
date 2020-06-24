@@ -23,11 +23,13 @@ import HttpIcon from "@material-ui/icons/Http";
 import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
 import SidebarItems from './SidebarItems'
 import './style.css'
+import { useTranslation } from 'react-i18next';
 
 export default function Sidebar() {
   const classes = useStyles();
   const theme = useTheme();
   const [isOpen, setIsOpen] = React.useState(false);
+  const { t  } = useTranslation();
 
   const handleSidebarState = () => {
     setIsOpen(!isOpen);
@@ -54,8 +56,8 @@ export default function Sidebar() {
         {isOpen ? (
           <div className="profile">
             <img src={omar} alt="profile" className="profileImg" />
-            <h3>Omar Alithawi</h3>
-            <h4>Web developer</h4>
+            <h3>{t('Name')}</h3>
+            <h4>{t('Description')}</h4>
           </div>
         ) : (
           <div className="profilePlaceholder">

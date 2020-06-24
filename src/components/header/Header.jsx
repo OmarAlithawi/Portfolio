@@ -7,9 +7,29 @@ import  github  from '../../assets/img/github.svg'
 import SectionsDots from './SectionsDots'
 import {Element} from 'react-scroll'
 import * as Scroll from 'react-scroll'
+import Translation from '../translation/Translate'
+import Switch from '@material-ui/core/Switch';
+import FormGroup from '@material-ui/core/FormGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+
+import i18next from 'i18next';
+import { withNamespaces } from 'react-i18next';
 
 
 export default function Header() {
+
+  const [checked, setChecked] = React.useState(false);
+  
+  
+
+  const toggleChecked = () => {
+    setChecked((prev) => !prev);
+  };
+  
+
+  function handleClick(lang) {
+    i18next.changeLanguage(lang)
+  }
 
   const scroll = Scroll.animateScroll;
 
@@ -19,6 +39,16 @@ export default function Header() {
 
     return (
         <Element className = "header" name ="Home">
+          
+        <FormGroup className ="nav">
+      <FormControlLabel
+        control={<Switch checked={checked} onChange={toggleChecked} />}
+        label={"lang"}
+      />
+    </FormGroup>
+    {checked ?handleClick('ar'):handleClick('en')}
+    
+    
             <div className ="sectionsDots" >
               { ['Home' , 'About' , 'Portfolio' , 'Contact'].map((name)=> {
                   return <SectionsDots sectionName = {name} />
@@ -37,7 +67,7 @@ export default function Header() {
           </div>  
 
           <h1 className ='myName'>Omar Alithawi</h1>
-          <h3 className ='prefix'>Hi, I'm</h3>
+          <h3 className ='prefix'>Hi, i'm</h3>
           <p className ="description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iste sit, mollitia illo dolore laboriosam aliquam consequuntur error omnis sed!
             </p>  
