@@ -1,5 +1,12 @@
 {
-    "Name":  "Omar Alithawi",
-    "Description":"Web developer"
-    
+    "name":  "Omar Alithawi",
+    "job":"Web developer",
+    "description_first" :  "I'm a computer engineering student and a passionate ",
+    "description_second" : "on a journey of learning, and  i've been a web developer for the last 250 years.",
+    "word_rotating_1" : "Web designer",
+    "word_rotating_2" : "Web developer",
+    "word_rotating_3" : "Frontend developer",
+    "word_rotating_4" : "Backend developer",
+    "intro":"Hi, i'm"
+
 }

@@ -7,9 +7,9 @@ export default function SidebarItems(props) {
   
 
     return (
-         <Link activeClass="active" spy = {true} hashSpy={true} to={props.text}  smooth={true} duration={1000}>
-            <ListItem button key={props.text}>
-              {props.item(props.text, props.index)}
+         <Link activeClass="active" spy = {true} hashSpy={true} to={props.section}  smooth={true} duration={1000}>
+            <ListItem button key={props.section}>
+              {props.item(props.section, props.index)}
             </ListItem>
         </Link>
         

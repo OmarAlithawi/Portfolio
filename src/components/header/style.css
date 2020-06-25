@@ -102,14 +102,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    z-index: 1;
 }
 
 .myName{
     grid-row: 5/6;
-    grid-column: 4/8;
+    grid-column: 3/7;
     align-self: start;
-    justify-content: center;
+    justify-content: start;
+    width: 100%;
     letter-spacing: 3px;
     font-size: 60px;
     z-index: 2;
@@ -117,70 +118,78 @@
 
 .prefix{
     grid-row: 4/5;
-    grid-column: 4/8;
+    grid-column: 3/7;
     align-self: end;
-   
+   margin-left: 8px;
 }
 
 .description{
     grid-row: 6/9;
-    grid-column: 4/8;
+    grid-column: 3/7;
     z-index: 2;
+    margin-left: 8px;
+
 }
+
 
 .nav{
-    grid-row: 1/2;
-    grid-column: 4/7;
+    grid-row: 2/3;
+    grid-column: 12/13;
 }
 
-@keyframes svgBackground {
-    0%{
-        top: -100px;
-        left: -50px;
-    }
-    10%{
-        top: -110px;
-        left: -60px;
-    }
-    20%{
-        top: -100px;
-        left: -50px;
-    }
+.bolb{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
 
-    30%{
-        top: -90px;
-        right: -60px;
-    }
 
-    40%{
-        top: -100px;
-        left: -50px;
-    }
-    50%{
-        top: -110px;
-        left: -40px;
-    }
-    60%{
-        top: -100px;
-        right: -50px;
-    }
-    70%{
-        top: -90px;
-        right: -60px;
-    }
-    80%{
-        top: -100px;
-        left: -50px;
-    }
-    90%{
-        top: -110px;
-        left: -60px;
-    }
+/*Word animation*/
 
-    100%{
-        top: -110px;
-        right: -60px;
-    }
-    
+.outer{
+  position:relative;
+  top:-12px;
+  left: 3px
+}
 
+.inner{
+  position:absolute;
+  border:0px solid #ddd;
+  height:50px;
+  line-height:50px;
+  width: 200px;
+  text-transform:uppercase;
+  overflow:hidden;
+  display:inline-block;
+}
+.inner span{
+  animation:animate 10s ease infinite;
+  position:relative;
+  color:#e58e26;
+}
+
+@keyframes animate{
+  0%,100%{
+    top:0;
+  }
+  20%{
+    top:0px;
+  }  
+  25%{
+    top:-50px;
+  }
+  45%{
+    top:-50px;
+  }
+  50%{
+    top:-100px;
+  }
+  70%{
+    top:-100px;
+  }
+  75%{
+    top:-150px;
+  }
+  95%{
+    top:-150px;
+  }
 }

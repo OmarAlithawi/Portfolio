@@ -35,7 +35,7 @@ export default function Sidebar() {
     setIsOpen(!isOpen);
   };
 
-  const sidebarLinkItems = (text, index) => {
+  const sidebarSectionsItems = (text, index) => {
     const icons = [
       <HomeIcon  key = {index}/>,
       <MenuBookIcon key = {index}/>,
@@ -56,8 +56,8 @@ export default function Sidebar() {
         {isOpen ? (
           <div className="profile">
             <img src={omar} alt="profile" className="profileImg" />
-            <h3>{t('Name')}</h3>
-            <h4>{t('Description')}</h4>
+            <h3>{t('name')}</h3>
+            <h4>{t('job')}</h4>
           </div>
         ) : (
           <div className="profilePlaceholder">
@@ -69,10 +69,11 @@ export default function Sidebar() {
     );
   };
 
+
   return (
     <div className={classes.root}>
       
-    
+    {/*Toggle button */}
       <Drawer
         variant="permanent"
         className={clsx(classes.drawer, {
@@ -109,11 +110,13 @@ export default function Sidebar() {
           </IconButton>
         }
         </div>
+
         <Divider />
         <List>{sidebarProfileInformation()}</List>
         <Divider />
+
         <List>
-          {["Home", "About", "Portfolio", "Contact"].map((text, index) => <SidebarItems index ={index} text = {text} item = {sidebarLinkItems} />)}
+          {["Home", "About", "Portfolio", "Contact"].map((section, index) => <SidebarItems key= {index} index ={index} section = {section} item = {sidebarSectionsItems} />)}
         </List>
         
       </Drawer>

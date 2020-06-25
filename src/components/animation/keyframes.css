@@ -1,0 +1,67 @@
+/*ABOUT ME*/
+@keyframes rotate {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+/*HEADER*/
+
+
+@keyframes svgBackground {
+    0%{
+        top: -100px;
+        left: -50px;
+    }
+    10%{
+        top: -110px;
+        left: -60px;
+    }
+    20%{
+        top: -100px;
+        left: -50px;
+    }
+
+    30%{
+        top: -90px;
+        right: -60px;
+    }
+
+    40%{
+        top: -100px;
+        left: -50px;
+    }
+    50%{
+        top: -110px;
+        left: -40px;
+    }
+    60%{
+        top: -100px;
+        right: -50px;
+    }
+    70%{
+        top: -90px;
+        right: -60px;
+    }
+    80%{
+        top: -100px;
+        left: -50px;
+    }
+    90%{
+        top: -110px;
+        left: -60px;
+    }
+
+    100%{
+        top: -110px;
+        right: -60px;
+    }
+    
+
+}
+
+
+/**/
