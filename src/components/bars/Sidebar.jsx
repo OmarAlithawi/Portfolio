@@ -118,7 +118,7 @@ export default function Sidebar() {
         <Divider />
 
         <List>
-          {["Home", "About", "Projects","Resume", "Contact"].map((section, index) => <SidebarItems key= {index} index ={index} section = {section} item = {sidebarSectionsItems} />)}
+          {[t("home"), t("about"), t("projects"),t("resume"), t("contact")].map((section, index) => <SidebarItems key= {index} index ={index} section = {section} item = {sidebarSectionsItems} />)}
         </List>
         
       </Drawer>

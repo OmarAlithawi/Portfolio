@@ -7,7 +7,7 @@ import Contact from "../../components/contact/Contact"
 import Resume from "../../components/resume/Resume"
 import useStyles from "./style";
 import Typography from '@material-ui/core/Typography'
-
+import {useTranslation} from "react-i18next"
 
 
 
@@ -21,11 +21,11 @@ export default function Home() {
 
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        <Header />  
-        <About />
-        <Projects />
-        <Resume />
-        <Contact />
+        <Header  />  
+        <About  />
+        <Projects  />
+        <Resume  />
+        <Contact  />
         <Typography paragraph>
             
         </Typography>

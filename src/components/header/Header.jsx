@@ -17,11 +17,13 @@ import i18next from 'i18next';
 import { withNamespaces } from 'react-i18next';
 
 
-export default function Header() {
+export default function Header(props) {
  
+  
 
   const [checked, setChecked] = React.useState(false);
   const [langs, setLangs] = React.useState("English");
+  const [componentIdForLanguage, setComponentIdForLanguage] = React.useState("Home");
   
   function setLanguage(lang) {
     i18next.changeLanguage(lang)
@@ -32,8 +34,10 @@ export default function Header() {
     
     if(checked){
       setLangs("English");
+      setComponentIdForLanguage("Home");
     }else{
       setLangs("العربية");
+      setComponentIdForLanguage("الصفحة الرئيسية");
     }
   };
   
@@ -44,7 +48,7 @@ export default function Header() {
   }, [])
 
     return (
-        <Element className = "header" name ="Home">
+        <Element className = "header" name = {componentIdForLanguage}>
           <FormGroup className ="nav">
             <FormControlLabel
             control={<Switch checked={checked} onChange={setSwitchState} />}

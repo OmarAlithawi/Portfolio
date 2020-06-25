@@ -3,11 +3,14 @@ import './style.css'
 import {Element} from 'react-scroll'
 import '../animation/keyframes.css'
 import {ThinkingSvgAboutSection , Education , AboutMe } from '../svg/SVG'
+import { useTranslation } from 'react-i18next';
 
+export default function About(props) {
+const { t  } = useTranslation();
 
-export default function About() {
+    
     return (
-        <Element className ="about" name ="About" >
+        <Element className ="about" name ={t("about")} >
            
             <div className ="rightSide">
                 <h1 className ="aboutMe">About Me</h1>

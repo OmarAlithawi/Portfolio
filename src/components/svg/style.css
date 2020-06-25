@@ -38,7 +38,7 @@ svg{
 }
 
 #body{
-    animation: rotateHat 5s infinite linear;
+    animation: rotateAboutMeSvgBody 5s infinite linear;
     transform-origin: center;
     transform-box: fill-box;
 }

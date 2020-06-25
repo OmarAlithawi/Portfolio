@@ -7,6 +7,13 @@
     "word_rotating_2" : "Web developer",
     "word_rotating_3" : "Frontend developer",
     "word_rotating_4" : "Backend developer",
-    "intro":"Hi, i'm"
+    "intro":"Hi, i'm",
+   
+    "home":"Home",
+    "about":"About",
+    "projects":"Projects",
+    "resume":"Resume",
+    "contact":"Contact"
+    
 
 }
