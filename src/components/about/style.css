@@ -17,23 +17,6 @@
 
 }
 
-.svgTest{
-    
-    object-fit: cover;
-    grid-row: 3/8;
-    grid-column: 3/7;
-}
-
-
-svg{
-    width: 110%;
-}
-
-#thoughts{
-    animation: rotate 2s infinite linear;
-    transform-origin: center;
-    transform-box: fill-box;
-}
 
 .aboutDescription{
     grid-row: 4/8;
@@ -43,11 +26,19 @@ svg{
 }
 
 .aboutMe{
-    grid-row: 1/3;
-    grid-column: 6/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+.rightSide{
+    grid-row: 1/13;
+    grid-column: 8/13;
+    background-color: rgb(153, 226, 255);
     width: 100%;
-    align-self: center;
-    margin-left: 100px;
+    height: 100%;
 }
 
 

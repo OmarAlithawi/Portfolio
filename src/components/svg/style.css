@@ -1,0 +1,44 @@
+.thinkingSvg{
+    
+    object-fit: cover;
+    grid-row: 1/4;
+    grid-column: 3/6;
+    justify-content: center;
+}
+
+
+svg{
+    width: 100%;
+}
+
+#thoughts{
+    animation: rotate 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#hat{
+    animation: rotateAboutMeSvgBody 5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+
+.educationSvg{
+    object-fit: cover;
+    grid-row: 5/8;
+    grid-column: 8/11;
+}
+
+.aboutMeSvg{
+    object-fit: cover;
+    grid-row: 2/13;
+    grid-column: 3/7;
+
+}
+
+#body{
+    animation: rotateHat 5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}

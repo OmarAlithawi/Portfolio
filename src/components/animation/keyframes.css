@@ -8,6 +8,45 @@
     }
 }
 
+@keyframes rotateAboutMeSvgBody {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    10%{
+        transform: rotateZ(1deg);
+    }
+    20%{
+        transform: rotateZ(0deg);
+    }
+    30%{
+        transform: rotateZ(-1deg);
+    }
+    40%{
+        transform: rotateZ(0deg);
+    }
+
+    50%{
+        transform: rotateZ(1deg);
+    }
+    60%{
+        transform: rotateZ(0deg);
+    }
+    70%{
+        transform: rotateZ(-1deg);
+    }
+    80%{
+        transform: rotateZ(0deg);
+    }
+    90%{
+        transform: rotateZ(1deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+
+}
+
+
 /*HEADER*/
 
 

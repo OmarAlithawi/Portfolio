@@ -33,7 +33,7 @@ export default function Header() {
     if(checked){
       setLangs("English");
     }else{
-      setLangs("Arbic");
+      setLangs("العربية");
     }
   };
   
@@ -76,6 +76,7 @@ export default function Header() {
           <HeaderDescription />
 
           <h1 className ="sectionNumbers">0.1</h1>
+          <h1 className ="sectionNumbersBackground">0.1</h1>
         </Element>
     )
 }

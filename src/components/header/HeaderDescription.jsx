@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function HeaderDescription() {
     const { t  } = useTranslation();
+
     return (
         <>
         <h1 className ='myName'>{t('name')}</h1>

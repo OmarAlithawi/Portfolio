@@ -142,6 +142,12 @@
     grid-column: 2/3;
 }
 
+.sectionNumbersBackground{
+  grid-row: 5/9;
+  grid-column: 3/6;
+  opacity: .04;
+  font-size: 400px;
+}
 
 /*Word animation*/
 
