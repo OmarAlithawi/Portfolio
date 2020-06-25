@@ -32,9 +32,9 @@ svg{
 
 .aboutMeSvg{
     object-fit: cover;
-    grid-row: 2/13;
+    grid-row: 1/13;
     grid-column: 3/7;
-
+    align-self: center;
 }
 
 #body{

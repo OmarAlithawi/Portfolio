@@ -20,6 +20,7 @@ import FaceIcon from "@material-ui/icons/Face";
 import HomeIcon from "@material-ui/icons/Home";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import HttpIcon from "@material-ui/icons/Http";
+import AttachFileIcon from '@material-ui/icons/AttachFile';
 import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
 import SidebarItems from './SidebarItems'
 import './style.css'
@@ -40,6 +41,7 @@ export default function Sidebar() {
       <HomeIcon  key = {index}/>,
       <MenuBookIcon key = {index}/>,
       <HttpIcon key = {index}/>,
+      <AttachFileIcon key ={index} />,
       <PermContactCalendarIcon key = {index}/>,
     ];
     return (
@@ -116,7 +118,7 @@ export default function Sidebar() {
         <Divider />
 
         <List>
-          {["Home", "About", "Portfolio", "Contact"].map((section, index) => <SidebarItems key= {index} index ={index} section = {section} item = {sidebarSectionsItems} />)}
+          {["Home", "About", "Projects","Resume", "Contact"].map((section, index) => <SidebarItems key= {index} index ={index} section = {section} item = {sidebarSectionsItems} />)}
         </List>
         
       </Drawer>

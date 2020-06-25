@@ -2,8 +2,9 @@ import React , {useEffect} from "react";
 import Sidebar from "../../components/bars/Sidebar";
 import Header from "../../components/header/Header"
 import About from "../../components/about/About"
-import Portfolio from "../../components/portfolio/Portfolio"
+import Projects from "../../components/projects/Projects"
 import Contact from "../../components/contact/Contact"
+import Resume from "../../components/resume/Resume"
 import useStyles from "./style";
 import Typography from '@material-ui/core/Typography'
 
@@ -22,7 +23,8 @@ export default function Home() {
         <div className={classes.toolbar} />
         <Header />  
         <About />
-        <Portfolio />
+        <Projects />
+        <Resume />
         <Contact />
         <Typography paragraph>
             

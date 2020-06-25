@@ -56,7 +56,7 @@ export default function Header() {
     
 
             <div className ="sectionsDots" >
-              { ['Home' , 'About' , 'Portfolio' , 'Contact'].map((name , index)=> {
+              { ['Home' , 'About' , 'Projects', 'Resume' , 'Contact'].map((name , index)=> {
                   return <SectionsDots key = {index} sectionName = {name} />
                })}
              </div>   
