@@ -2,7 +2,7 @@ import React from "react";
 import clsx from "clsx";
 import { useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
-import AppBar from '@material-ui/core/AppBar';
+import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import List from "@material-ui/core/List";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -20,17 +20,17 @@ import FaceIcon from "@material-ui/icons/Face";
 import HomeIcon from "@material-ui/icons/Home";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import HttpIcon from "@material-ui/icons/Http";
-import AttachFileIcon from '@material-ui/icons/AttachFile';
+import AttachFileIcon from "@material-ui/icons/AttachFile";
 import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
-import SidebarItems from './SidebarItems'
-import './style.css'
-import { useTranslation } from 'react-i18next';
+import SidebarItems from "./SidebarItems";
+import "./style.css";
+import { useTranslation } from "react-i18next";
 
 export default function Sidebar() {
   const classes = useStyles();
   const theme = useTheme();
   const [isOpen, setIsOpen] = React.useState(false);
-  const { t  } = useTranslation();
+  const { t } = useTranslation();
 
   const handleSidebarState = () => {
     setIsOpen(!isOpen);
@@ -38,11 +38,11 @@ export default function Sidebar() {
 
   const sidebarSectionsItems = (text, index) => {
     const icons = [
-      <HomeIcon  key = {index}/>,
-      <MenuBookIcon key = {index}/>,
-      <HttpIcon key = {index}/>,
-      <AttachFileIcon key ={index} />,
-      <PermContactCalendarIcon key = {index}/>,
+      <HomeIcon key={index} />,
+      <MenuBookIcon key={index} />,
+      <HttpIcon key={index} />,
+      <AttachFileIcon key={index} />,
+      <PermContactCalendarIcon key={index} />,
     ];
     return (
       <>
@@ -58,8 +58,8 @@ export default function Sidebar() {
         {isOpen ? (
           <div className="profile">
             <img src={omar} alt="profile" className="profileImg" />
-            <h3>{t('name')}</h3>
-            <h4>{t('job')}</h4>
+            <h3>{t("name")}</h3>
+            <h4>{t("job")}</h4>
           </div>
         ) : (
           <div className="profilePlaceholder">
@@ -71,11 +71,9 @@ export default function Sidebar() {
     );
   };
 
-
   return (
     <div className={classes.root}>
-      
-    {/*Toggle button */}
+      {/*Toggle button */}
       <Drawer
         variant="permanent"
         className={clsx(classes.drawer, {
@@ -98,19 +96,20 @@ export default function Sidebar() {
                 <ChevronLeftIcon />
               )}
             </IconButton>
-          ) : 
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleSidebarState}
-            edge="start"
-            className={clsx(classes.menuButton, {
-              [classes.hide]: isOpen,
-            }) } id ="hamburger"
-          >
-            <MenuIcon />
-          </IconButton>
-        }
+          ) : (
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={handleSidebarState}
+              edge="start"
+              className={clsx(classes.menuButton, {
+                [classes.hide]: isOpen,
+              })}
+              id="hamburger"
+            >
+              <MenuIcon />
+            </IconButton>
+          )}
         </div>
 
         <Divider />
@@ -118,11 +117,22 @@ export default function Sidebar() {
         <Divider />
 
         <List>
-          {[t("home"), t("about"), t("projects"),t("resume"), t("contact")].map((section, index) => <SidebarItems key= {index} index ={index} section = {section} item = {sidebarSectionsItems} />)}
+          {[
+            t("home"),
+            t("about"),
+            t("projects"),
+            t("resume"),
+            t("contact"),
+          ].map((section, index) => (
+            <SidebarItems
+              key={index}
+              index={index}
+              section={section}
+              item={sidebarSectionsItems}
+            />
+          ))}
         </List>
-        
       </Drawer>
-      
     </div>
   );
 }
