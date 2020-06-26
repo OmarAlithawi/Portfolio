@@ -17,3 +17,59 @@
     align-items: center;
 
 }
+
+.Carousel-root-15{
+    grid-row: 4/12;
+    grid-column: 3/11;
+    margin-left: 30px;
+}
+.CarouselItem{
+    height: 100%;
+    
+}
+
+.MuiPaper-root{
+    height: 58.5vh;
+}
+
+.cardContent{
+    display: flex;
+
+}
+
+.cardContent img {
+    width: 50%;
+    height: 58.5vh;
+
+}
+
+.projectDescription{
+    background-color: #065A82;
+    width: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.heading-1{
+    grid-row: 2/3;
+    grid-column: 6/8;
+    display: flex;
+    justify-content: center;
+}
+
+.projectDescription a {
+    text-decoration: none;
+    color: #065A82 ;
+    background-color: #E6F6FE;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.projectDescription ul {
+    list-style: none;
+}
+
+
