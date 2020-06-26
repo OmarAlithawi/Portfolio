@@ -7,3 +7,30 @@
     background-color: #fff;
 
 }
+
+.box1,
+.box2,
+.box3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box1{
+    grid-row: 3/5;
+    grid-column: 3/11;
+}
+
+.box2{
+    grid-row: 6/8;
+    grid-column: 3/11;
+}
+
+.box3{
+    grid-row: 9/11;
+    grid-column: 3/11;
+}
+
+.resume img {
+    width: 200px;
+}

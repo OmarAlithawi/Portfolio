@@ -10,7 +10,8 @@ export default function SingleProject(props) {
     return (
         
         <Paper elevation={3} className ="card" >
-            <div className ="cardContent">
+            <div className ="cardContent"> 
+            
                 <img src={props.item.img} alt="project" />
                 <div className ="projectDescription">
                     <h2>{props.item.name}</h2>
