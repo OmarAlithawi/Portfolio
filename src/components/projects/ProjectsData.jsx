@@ -11,7 +11,8 @@ export const items = [
             "React",
             "Firebase",
             "Material ui"
-        ]
+        ],
+        live_demo: 'https://omaralithawi.github.io/MovieApp/'
     },
     {
         name: "Moive Project",
@@ -22,7 +23,8 @@ export const items = [
             "React",
             "Firebase",
             "Material ui"
-        ]
+        ],
+        live_demo: 'https://omaralithawi.github.io/MovieApp/'
     },
 
     {
@@ -33,6 +35,7 @@ export const items = [
             "React",
             "Firebase",
             "Material ui"
-        ]
+        ],
+        live_demo: 'https://omaralithawi.github.io/MovieApp/'
     }
 ]
