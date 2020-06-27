@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     root: {
-      width: '100%',
+      width: '70%',
      
     },
     heading: {
@@ -16,8 +16,8 @@ const useStyles = makeStyles((theme) => ({
     root2: {
         display: 'flex',
         justifyContent:'space-between',
-        width:"100%",
-        height:"100%",
+         width:"100%",
+         height: "20%",
         marginTop: '10px'
       },
       details: {
@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
       },
       cover: {
         width: 151,
+        objectFit: 'cover'
       },
       controls: {
         display: 'flex',
