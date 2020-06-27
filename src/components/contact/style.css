@@ -18,3 +18,25 @@
     align-items: center;
 
 }
+
+.form{
+    grid-row: 3/11;
+    grid-column: 7/11;
+    height: 102% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.contact-img{
+    grid-row: 3/11;
+    grid-column: 2/7;
+}
+
+.contact-img img {
+    object-fit: cover;
+    width: 90%;
+    justify-self: end;
+    margin-left: 20px;
+}

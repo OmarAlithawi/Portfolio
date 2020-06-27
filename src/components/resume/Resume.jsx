@@ -30,6 +30,7 @@ const skillsInfo = ['React' , 'HTML, CSS & JS' , 'Firebase' , 'SASS'];
           <div className ="skills">
             {skillsSvgs.map((svg , index) => <Skills key = {index} svg ={svg} index = {index} skillsInfo = {skillsInfo} />)}
           </div>
+          <a href ="#">Download Resume</a>
     </Paper>
       
       

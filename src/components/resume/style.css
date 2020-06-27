@@ -21,6 +21,7 @@
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(12,1fr);
     padding: 10px;
+    margin-left: 20px;
 }
 
 .resume .heading-1 {
@@ -29,7 +30,8 @@
 
 .informationDropDownList{
     grid-row: 2/12;
-    grid-column: 2/7;
+    grid-column: 2/6;
+    margin-top: 10px;
 }
 
 .skills{
@@ -41,4 +43,18 @@
 .MuiPaper-root {
     height: 10%;
     z-index: 4;
+}
+
+.resumeInfo a {
+    text-decoration: none;
+    color: #E6F6FE;
+    background-color:  #065A82;
+    padding: 5px 15px;
+    border-radius: 5px;
+    width: 100%;
+    grid-row: 10/11;
+    grid-column: 2/6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
