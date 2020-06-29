@@ -4,8 +4,8 @@ import capstoneProject from "../../assets/img/capstoneProject.svg"
 
 export const items = [
     {
-        name: "Board Project",
-        description: "Probably the most random thing you have ever seen!",
+        name: "Six thinking hats",
+        description: " Six Thinking Hats and the associated idea parallel thinking provide a means for groups to plan thinking processes in a detailed and cohesive way, and in doing so to think together more effectively.",
         img: boardProject,
         technologies:[
             "React",
@@ -14,14 +14,14 @@ export const items = [
         ]
     },
     {
-        name: "Moive Project",
-        description: "Hello World!",
+        name: "Moive app",
+        description: "Is a website which allows you to search for any movie and actor or actresses.",
         img: movieProject,
 
         technologies:[
-            "React",
-            "Firebase",
-            "Material ui"
+            "HTML",
+            "CSS",
+            "Javascript"
         ]
     },
 

@@ -12,7 +12,7 @@ export default function About(props) {
     <Element className="about" name={t("about")}>
       <div className="rightSide">
         <h1 className="aboutMe">About Me</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <p>Hello everyone , i'm a Front-End developer from Iraq currently living in Turkey,Istanbul. I'm currently studying computer engineering in Altinbas university. Learning how to code gave me an insight  about how to learn faster , solve problem , team working and a lot more   </p>
       </div>
       <AboutMe className="leftSide" />
 

@@ -18,7 +18,7 @@ import { withNamespaces } from "react-i18next";
 
 export default function Header(props) {
 
-  const [checked, setChecked] = React.useState(false);
+  const [isChecked, setIsChecked] = React.useState(false);
   const [langs, setLangs] = React.useState("English");
   const [componentIdForLanguage, setComponentIdForLanguage] = React.useState("Home");
 
@@ -27,9 +27,9 @@ export default function Header(props) {
   }
 
   const setSwitchState = () => {
-    setChecked((prev) => !prev);
+    setIsChecked((prev) => !prev);
 
-    if (checked) {
+    if (isChecked) {
       setLangs("English");
       setComponentIdForLanguage("Home");
     } else {
@@ -47,11 +47,11 @@ export default function Header(props) {
     <Element className="header" name={componentIdForLanguage}>
       <FormGroup className="nav">
         <FormControlLabel
-          control={<Switch checked={checked} onChange={setSwitchState} />}
+          control={<Switch isChecked={isChecked} onChange={setSwitchState} />}
           label={langs}
         />
       </FormGroup>
-      {checked ? setLanguage("ar") : setLanguage("en")}
+      {isChecked ? setLanguage("ar") : setLanguage("en")}
 
       <div className="sectionsDots">
         {["Home", "About", "Projects", "Resume", "Contact"].map(
@@ -84,7 +84,7 @@ export default function Header(props) {
         <img src={hero} alt="hero" />
       </div>
 
-      <HeaderDescription />
+      <HeaderDescription  isChecked = {isChecked}/>
 
       <h1 className="sectionNumbers">0.1</h1>
       <h1 className="sectionNumbersBackground">0.1</h1>

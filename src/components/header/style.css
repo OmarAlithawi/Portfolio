@@ -130,8 +130,9 @@
     grid-column: 3/7;
     z-index: 2;
     margin-left: 8px;
-
+  margin-top: 20px;
 }
+
 
 
 .nav{
@@ -151,13 +152,23 @@
   font-size: 400px;
 }
 
+.descriptionArabic{
+  margin-left: 97px;
+}
+
 /*Word animation*/
+
 
 .outer{
   position:relative;
   top:-12px;
   left: 3px
 }
+
+.outerArbic{
+  left: -6px;
+}
+
 
 .inner{
   position:absolute;
