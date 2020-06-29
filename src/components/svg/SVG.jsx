@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import "../about/style.css"
 export function ThinkingSvgAboutSection() {
   return (
     <div className="thinkingSvg">

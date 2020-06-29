@@ -19,6 +19,8 @@ const useStyles = makeStyles((theme) => ({
     whiteSpace: "nowrap",
     color: "white",
     position: "fixed",
+    zIndex:10,
+    
   },
   drawerOpen: {
     width: drawerWidth,
@@ -26,6 +28,9 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
+    "@media (max-width: 400px)":  {
+      width: '100%'
+    },
     backgroundColor: "#065A82",
     color: "white",
   },

@@ -85,7 +85,8 @@ export default function Sidebar() {
             [classes.drawerOpen]: isOpen,
             [classes.drawerClose]: !isOpen,
           }),
-        }}
+        }} 
+        id= "drawer"
       >
         <div className={classes.toolbar}>
           {isOpen ? (

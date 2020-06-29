@@ -7,6 +7,9 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(1),
         width: '350px'
       },
+      "media (max-width:550px)":{
+        width:'300px'
+      },  
       display: 'block',
     },
     submitBtn: {

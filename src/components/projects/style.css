@@ -74,3 +74,57 @@
 }
 
 
+
+
+
+
+
+
+
+@media only screen and (max-width:1339px){
+    .projectDescription{
+        padding: 20px;
+    }
+}
+@media only screen and (max-width:850px){
+    .projectDescription{
+        font-size:15px;
+    }
+    .projectDescription a {
+        padding: 4px 13px;
+    }
+}
+@media only screen and (max-width:800px){
+    .cardContent{
+        flex-direction: column;
+        
+    }
+
+    .cardContent img {
+        width: 100%;
+        height: 25vh;
+    }
+    .projectDescription{
+        width: 100%;
+        height: 25vh;
+    }
+    .projectDescription ul {
+        list-style: none;
+        display: flex;
+        
+    }
+
+    .projectDescription ul li {
+        margin-left: 10px;
+    }
+
+    .MuiPaper-root{
+        height: 100vh;
+    }
+    
+}
+@media only screen and (max-width:500px){
+    .projectDescription{
+        font-size: 11px;
+    }
+}

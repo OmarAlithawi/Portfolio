@@ -7,6 +7,7 @@
  - blob animation 
  - snap scroll
  - two languages
+ - change the firebase config file for the board prohjct 
 
 
  

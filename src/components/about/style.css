@@ -70,3 +70,127 @@
 
 
 
+@media only screen and (max-width:1400px){
+    .rightSide p {
+        width: 60%;
+    }
+}
+@media only screen and (max-width:1200px){
+
+    .rightSide p::before{
+ 
+        width: 160px;
+        height: 160px;
+        
+    }
+    
+    .rightSide p::after{
+        width: 160px;
+        height: 160px;
+        
+    }
+
+    .rightSide p {
+       font-size: 17px;
+       width: 50%;
+    }
+}
+@media only screen and (max-width:1040px){
+    .rightSide{
+        grid-row: 1/13;
+        grid-column: 7/13;
+    }
+}
+
+@media only screen and (max-width:860px){
+
+    .rightSide p::before{
+ 
+      top: 180px;
+      width: 140px;
+      height: 140px;
+    }
+    
+    .rightSide p::after{
+        top: 200px;
+        width: 140px;
+        height: 140px;
+    }
+
+    .rightSide{
+        grid-row: 1/13;
+        grid-column: 2/13;
+    }
+
+    .rightSide p {
+        font-size: 17px;
+        width: 65%;
+        
+     }
+    
+}
+@media only screen and (max-width:700px){
+    .rightSide p::before{
+ 
+        top: 180px;
+          
+      }
+      
+      .rightSide p::after{
+          top: 200px;
+          
+      }
+  
+      .rightSide{
+          grid-row: 1/13;
+          grid-column: 2/13;
+      }
+  
+      .rightSide p {
+          font-size: 18px;
+          width: 70%;
+          
+       }
+}
+@media only screen and (max-width:590px){
+    .rightSide p::before{
+        top: 200px;
+      }
+      
+      .rightSide p::after{
+          top: 220px;
+          
+      }
+  
+      .rightSide p {
+          font-size: 16px;
+          width: 60%;
+          
+       }
+
+       .rightSide .aboutMe {
+           font: 15px;
+       }
+}
+@media only screen and (max-width:500px){
+      .rightSide p::before{
+        display: none;
+      }
+      
+      .rightSide p::after{
+         display: none;
+          
+      }
+
+      .rightSide{
+        grid-row: 1/13;
+        grid-column: 1/13;
+    }
+}
+@media only screen and (max-width:400px){
+    .rightSide p {
+        width: 55%;
+    }
+}
+
+

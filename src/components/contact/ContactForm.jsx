@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./style.css";
 import { makeStyles , useTheme } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
@@ -19,7 +19,7 @@ export default function ContactForm() {
         
         <div className="contactus-text-container">
           <div className={classes.contactTitle}>
-          <h1>Contact Me</h1>
+          <h1 className = "formHeading">Contact Me</h1>
           </div>
           <form className={classes.root} noValidate autoComplete="off">
             <div>

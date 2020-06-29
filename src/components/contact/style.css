@@ -40,3 +40,61 @@
     justify-self: end;
     margin-left: 20px;
 }
+
+@media only screen and (max-width:1100px){
+    .contact-img{
+        display: none;
+    }
+
+    
+.form{
+    grid-column: 3/11;
+}
+}
+
+
+@media only screen and (max-width:600px){
+
+    .form{
+        padding: 10px;
+        z-index: 0;
+        
+    }
+}
+
+@media only screen and (max-width:600px){
+    .form{
+        width: 100%;
+        justify-content: start;
+    }
+    .form div {
+        width: 70%;
+        font-size: 14px;
+    }
+   
+}
+
+@media only screen and (max-width:500px){
+  
+    .form div {
+        width: 55%;
+        font-size: 14px;
+    }
+   
+}
+
+@media only screen and (max-width:400px){
+    .form{
+        width: 100%;
+        justify-content: start;
+    }
+    .form div {
+        width: 50%;
+        
+    }
+     
+    .formHeading{
+        display: none;
+    }
+   
+}

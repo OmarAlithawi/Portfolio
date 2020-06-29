@@ -42,3 +42,10 @@ svg{
     transform-origin: center;
     transform-box: fill-box;
 }
+
+@media only screen and (max-width:860px){
+  
+    .aboutMeSvg{
+        display: none;
+    }
+}

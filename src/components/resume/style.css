@@ -58,3 +58,28 @@
     justify-content: center;
     align-items: center;
 }
+
+@media only screen and (max-width:910px){
+    
+    .skills{
+        height: 100% !important;
+        
+    }
+}
+
+@media only screen and (max-width:910px){
+    .skills{
+        display: none;
+    }
+    .informationDropDownList{
+        grid-row: 2/12;
+        grid-column: 2/12;
+        margin-top: 10px;
+    }
+
+    
+.resumeInfo a {
+    grid-row: 10/11;
+    grid-column: 2/12;
+}
+}
