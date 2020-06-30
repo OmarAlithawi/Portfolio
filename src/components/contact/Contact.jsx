@@ -12,7 +12,7 @@ export default function Contact(props) {
   return (
     <Element className="contact" name={t("contact")}>
       <Paper className ="form">
-        <ContactForm />
+        <ContactForm t ={t} />
       </Paper>
       <div className ="contact-img">
         <img src ={contact} alt ="conatct" />

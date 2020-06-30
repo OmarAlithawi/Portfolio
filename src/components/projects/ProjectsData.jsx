@@ -2,10 +2,12 @@ import boardProject from "../../assets/img/boardProject.svg"
 import movieProject from "../../assets/img/movieProject.svg"
 import capstoneProject from "../../assets/img/capstoneProject.svg"
 
+
+
 export const items = [
     {
         name: "Six thinking hats",
-        description: " Six Thinking Hats and the associated idea parallel thinking provide a means for groups to plan thinking processes in a detailed and cohesive way, and in doing so to think together more effectively.",
+        description: t("board_project_description"),
         img: boardProject,
         technologies:[
             "React",

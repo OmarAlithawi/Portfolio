@@ -13,13 +13,14 @@ import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
 import useStyles from './style'
 import Skills from './Skills'
+import { useTranslation } from "react-i18next";
 
 export default function ResumeInfo() {
 
 
     const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
-
+  const { t } = useTranslation();
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
@@ -33,12 +34,11 @@ export default function ResumeInfo() {
             aria-controls="panel1bh-content"
             id="panel1bh-header"
           >
-            <Typography className={classes.heading}>Summary</Typography>
+            <Typography className={classes.heading}>{t("summary")}</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-              Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget
-              maximus est, id dignissim quam.
+              {t("summary_description")}
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
@@ -49,12 +49,30 @@ export default function ResumeInfo() {
             aria-controls="panel2bh-content"
             id="panel2bh-header"
           >
-            <Typography className={classes.heading}>Education</Typography>
+            <Typography className={classes.heading}>{t("education")}</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-              Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus, varius pulvinar
-              diam eros in elit. Pellentesque convallis laoreet laoreet.
+             - Re:Coded Bootcamp (Re:Coded + Flatiron School) - 2020. <br/>
+             - Altinbas university - Istanbul - Computer engineering student expected graduation (2022) 
+            </Typography>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
+
+        <ExpansionPanel expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+          <ExpansionPanelSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel3bh-content"
+            id="panel3bh-header"
+          >
+            <Typography className={classes.heading}>{t("skills")}</Typography>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails>
+            <Typography>
+              - HTML5 , CSS3(SASS) and Javascript <br /> 
+              - React <br /> 
+              - Firbase <br />
+              - Bootstarp
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>

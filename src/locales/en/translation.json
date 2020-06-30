@@ -13,7 +13,23 @@
     "about":"About",
     "projects":"Projects",
     "resume":"Resume",
-    "contact":"Contact"
+    "contact":"Contact",
+
+    "about_description":"Hello everyone , i'm a Front-End developer from Iraq currently living in Turkey,Istanbul. I'm currently studying computer engineering in Altinbas university. Learning how to code gave me an insight about how to learn faster , solve problem , team working and a lot more",
     
+    "board_project_description": "Six Thinking Hats and the associated idea parallel thinking provide a means for groups to plan thinking processes in a detailed and cohesive way, and in doing so to think together more effectively.",
+    "board_prokect_title" : "Six thinking hats",
+    "live_demo" :"Live demo",
+
+    "movie_project_description": "Is a website which allows you to search for any movie and actor or actresses.",
+    "movie_project_title":"Movie app",
+
+    "summary" : "Summary",
+    "summary_description": "Junior Front-End developer with expereience in Firebase. Building websites and learning about new technologies gave me a strong understanding about how to solve problems and connunicate and work with teams.",
+
+    "education" :"Education",
+    "education_description": "",
+
+    "skills":"Skills"
 
 }

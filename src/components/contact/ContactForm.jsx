@@ -8,7 +8,7 @@ import useStyles from "./style";
 
 
 
-export default function ContactForm() {
+export default function ContactForm(props) {
 
     const classes = useStyles();
     const theme = useTheme();
@@ -19,7 +19,7 @@ export default function ContactForm() {
         
         <div className="contactus-text-container">
           <div className={classes.contactTitle}>
-          <h1 className = "formHeading">Contact Me</h1>
+          <h1 className = "formHeading">{props.t("contact")}</h1>
           </div>
           <form className={classes.root} noValidate autoComplete="off">
             <div>

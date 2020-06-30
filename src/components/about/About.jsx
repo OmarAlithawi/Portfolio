@@ -11,8 +11,8 @@ export default function About(props) {
   return (
     <Element className="about" name={t("about")}>
       <div className="rightSide">
-        <h1 className="aboutMe">About Me</h1>
-        <p>Hello everyone , i'm a Front-End developer from Iraq currently living in Turkey,Istanbul. I'm currently studying computer engineering in Altinbas university. Learning how to code gave me an insight  about how to learn faster , solve problem , team working and a lot more   </p>
+  <h1 className="aboutMe">{t("about")}</h1>
+        <p>{t("about_description")}</p>
       </div>
       <AboutMe className="leftSide" />
 
@@ -20,4 +20,5 @@ export default function About(props) {
       <h1 className="sectionNumbersBackground">0.2</h1>
     </Element>
   );
+
 }
