@@ -17,10 +17,11 @@ import i18next from "i18next";
 import { withNamespaces } from "react-i18next";
 
 export default function Header(props) {
-
   const [isChecked, setIsChecked] = React.useState(false);
   const [langs, setLangs] = React.useState("English");
-  const [componentIdForLanguage, setComponentIdForLanguage] = React.useState("Home");
+  const [componentIdForLanguage, setComponentIdForLanguage] = React.useState(
+    "Home"
+  );
 
   function setLanguage(lang) {
     i18next.changeLanguage(lang);
@@ -71,14 +72,13 @@ export default function Header(props) {
         >
           <img src={linkedin} alt="social meida" className="socialMediaIcons" />
         </a>
-        
       </div>
 
       <div className="headerImage">
         <img src={hero} alt="hero" />
       </div>
 
-      <HeaderDescription  isChecked = {isChecked}/>
+      <HeaderDescription isChecked={isChecked} />
 
       <h1 className="sectionNumbers">0.1</h1>
       <h1 className="sectionNumbersBackground">0.1</h1>

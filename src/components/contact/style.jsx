@@ -1,40 +1,40 @@
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import { makeStyles } from '@material-ui/core/styles';
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-      '& .MuiTextField-root': {
-        margin: theme.spacing(1),
-        width: '350px'
-      },
-      "media (max-width:550px)":{
-        width:'300px'
-      },  
-      display: 'block',
-    },
-    submitBtn: {
+  root: {
+    "& .MuiTextField-root": {
       margin: theme.spacing(1),
+      width: "350px",
     },
-    contactTitle: {
-      margin: theme.spacing(1),
-    }
-  }));
-  
-  const theme = createMuiTheme({
-    palette: {
-      primary: {
-        light: '#fff',
-        main: '#66A6FF',
-        dark: '#fff',
-        contrastText: '#fff',
-      },
-      secondary: {
-        light: '#fff',
-        main: '#66A6FF',
-        dark: '#fff',
-        contrastText: '#fff',
-      },
+    "media (max-width:550px)": {
+      width: "300px",
     },
-  });
-  
-  export default useStyles;
+    display: "block",
+  },
+  submitBtn: {
+    margin: theme.spacing(1),
+  },
+  contactTitle: {
+    margin: theme.spacing(1),
+  },
+}));
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      light: "#fff",
+      main: "#66A6FF",
+      dark: "#fff",
+      contrastText: "#fff",
+    },
+    secondary: {
+      light: "#fff",
+      main: "#66A6FF",
+      dark: "#fff",
+      contrastText: "#fff",
+    },
+  },
+});
+
+export default useStyles;
