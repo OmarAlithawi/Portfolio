@@ -19,8 +19,14 @@
 
 }
 
-.Carousel-root-15,
-.jss15{
+
+.carouselHolder{
+    grid-row: 4/12;
+    grid-column: 3/11;
+    margin-left: 30px;
+}
+
+#carouselHolder{
     grid-row: 4/12;
     grid-column: 3/11;
     margin-left: 30px;

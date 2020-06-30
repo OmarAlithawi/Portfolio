@@ -33,12 +33,15 @@ export default function Projects(props) {
   return (
     <Element className="projects" name={t("projects")}>
       <h1 className="heading-1">Projects</h1>
-
-      <Carousel interval={6000} animation="slide" className="">
+      <div id ="carouselHolder">
+      <Carousel interval={6000} animation="slide"  >
         {items.map((item ,index) => (
+          
           <SingleProject key = {index} item={item} />
+          
         ))}
       </Carousel>
+      </div>
 
       <h1 className="sectionNumbers">0.3</h1>
       <h1 className="sectionNumbersBackground">0.3</h1>
