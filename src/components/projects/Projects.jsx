@@ -23,7 +23,8 @@ export default function Projects(props) {
             "React",
             "Firebase",
             "Material ui"
-        ]
+        ],
+        live_demo_link:"https://omaralithawi.github.io/Boards-Project/",
     },
     {
         name: t("movie_project_title"),
@@ -34,19 +35,11 @@ export default function Projects(props) {
             "HTML",
             "CSS",
             "Javascript"
-        ]
+        ],
+        live_demo_link:"https://omaralithawi.github.io/MovieApp/#",
     },
 
-    {
-        name: "Capstone Project",
-        description: "Hello World!",
-        img: capstoneProject,
-        technologies:[
-            "React",
-            "Firebase",
-            "Material ui"
-        ]
-    }
+    
 ]
  
 
@@ -63,3 +56,19 @@ export default function Projects(props) {
     </Element>
   );
 }
+
+
+
+/**
+ * {
+        name: "Capstone Project",
+        description: "Hello World!",
+        img: capstoneProject,
+        technologies:[
+            "React",
+            "Firebase",
+            "Material ui"
+        ],
+        live_demo_link:"https://omaralithawi.github.io/MovieApp/#",
+    }
+ */

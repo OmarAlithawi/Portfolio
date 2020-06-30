@@ -10,6 +10,7 @@ import SASS from "../../assets/img/SASS.svg"
 import ResumeInfo from './ResumeInfo';
 import Skills from './Skills'
 import Paper from '@material-ui/core/Paper';
+import resumeFile from "../../assets/resumeFile.pdf"
 
 import useStyles from './style'
 
@@ -30,7 +31,7 @@ const skillsInfo = ['React' , 'HTML, CSS & JS' , 'Firebase' , 'SASS'];
           <div className ="skills">
             {skillsSvgs.map((svg , index) => <Skills key = {index} svg ={svg} index = {index} skillsInfo = {skillsInfo} />)}
           </div>
-          <a href ="#">Download Resume</a>
+          <a href = {resumeFile} download>Download Resume</a>
     </Paper>
       
       

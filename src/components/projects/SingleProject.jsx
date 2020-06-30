@@ -21,7 +21,7 @@ export default function SingleProject(props) {
                     <ul>
                          {props.item.technologies.map(tech => <li>{tech}</li>)}
                     </ul>
-                    <a href ="#">{t("live_demo")}</a>
+                    <a href ={props.item.live_demo_link} target="_blank">{t("live_demo")}</a>
                 </div>
             </div>
         </Paper>

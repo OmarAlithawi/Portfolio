@@ -71,13 +71,7 @@ export default function Header(props) {
         >
           <img src={linkedin} alt="social meida" className="socialMediaIcons" />
         </a>
-        <a href="">
-          <img
-            src={instagram}
-            alt="social meida"
-            className="socialMediaIcons"
-          />
-        </a>
+        
       </div>
 
       <div className="headerImage">
