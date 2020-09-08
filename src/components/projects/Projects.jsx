@@ -28,6 +28,14 @@ export default function Projects(props) {
       technologies: ["HTML", "CSS", "Javascript"],
       live_demo_link: "https://omaralithawi.github.io/MovieApp/#",
     },
+    {
+      name: t("capstone_project_title"),
+      description: t("capstone_project_description"),
+      img: capstoneProject,
+
+      technologies: ["ReactJS", "Firebase", "Wordpress"],
+      live_demo_link: "https://istanbul-capstone-ecommerce.netlify.app/",
+    },
   ];
 
   return (
